@@ -1,22 +1,24 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import ru.netology.statistic.Radio;
 
-public class RadioTest {
+class RadioTest {
 
     @Test
     public void testGetCurrentStation() {
         Radio radio = new Radio();
+
         radio.setCurrentStation(6);
 
         int expected = 6;
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
-
     }
 
     @Test
     public void testGetNegativeStation() {
         Radio radio = new Radio();
+
         radio.setCurrentStation(-5);
 
         int expected = 0;

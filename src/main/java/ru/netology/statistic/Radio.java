@@ -1,4 +1,7 @@
+package ru.netology.statistic;
+
 public class Radio {
+
     private int currentStation;
     private int currentVolume;
 
